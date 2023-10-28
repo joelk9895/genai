@@ -8,10 +8,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" Component={Feed} />
+          <Route path="/add" Component={AddConfession} />
         </Routes>
       </BrowserRouter>
     </>

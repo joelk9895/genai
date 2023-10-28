@@ -1,11 +1,11 @@
 import React from "react";
 import "./ConfessionCard.css";
 
-const ConfessionCard = () => {
+const ConfessionCard = ({confession}) => {
   return (
     <article className="confessions">
-      <h3>I lied to you sorry!</h3>
-      <p>02-03-2023</p>
+      <h3>{confession.confession}</h3>
+      <p>{confession.date.toDate().toLocaleDateString()}</p>
     </article>
   );
 };
